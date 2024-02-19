@@ -1,0 +1,134 @@
+/*Navy blue and coral, looks pretty good as a secondary option
+/*    background: linear-gradient(to bottom right, #1a1a1a, #141e30); /* Gradient background from navy blue to darker navy blue */
+/*     background-color: #ff8474; /* Lighter coral on hover */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #444, #222);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 0;
+    background: linear-gradient(to bottom right, #222222, #333333);
+    color: #fff;
+	
+}
+
+/* Trusted Trade logo at top left*/
+.logo{
+    margin-right: 0;
+    margin-left: 5vw;
+    padding-bottom: 0;
+    /*border: solid black 4px;*/
+    width: 25vw; /* Adjust the width and height of the div as needed */
+    height: 6.5vw;
+    background-size: contain;
+    background-position: center bottom .5vw;
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+/* When all the nav links are hovered*/
+
+.navbar ul li a:hover{
+color: #FCEF00;
+}
+
+/* When links are clicked*/
+
+.navbar ul li a:active{
+color: rgba(0,0,0,0);
+}
+
+/* navbar positioning */
+.navbar{
+    padding-top: 2%; /* Adjust as needed to move the links down */
+    padding-left: 20px;
+    margin-right: 20vw;
+    border: solid black 4px;
+    margin-top: 2%;
+}
+
+/* List positioning */
+.navlinks {
+    list-style: none;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+/* Link positioning */
+.navbar ul li {
+    display: inline;
+    margin-left: 30px; /* Adjust spacing between navigation links */
+}
+
+/* link text  */
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Sign in and login properties(mainly for positioning) */
+#signlogin ul{
+    padding-top: 1%;
+    padding-right: 1%;
+    margin: 2% 2%;
+    list-style: none;
+    position:absolute;
+    top:0;
+    right: 0;
+
+
+}
+
+
+
+/* Yellow bar */
+
+.separator {
+    border-top: 4px solid #ccc;
+    border-color: #FCEF00;
+}
+
+/* House area */
+
+.slogan_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Slogan area */
+
+.slogan{
+    padding-top: 5%;
+    text-align:left;
+    color:#FCEF00;
+    width: 58%;
+    font-size: 65px;
+}
+
+/* House image */
+.house_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.house{
+    padding: 5%;
+
+}
+
+

@@ -1,0 +1,254 @@
+/*Navy blue and coral, looks pretty good as a secondary option
+/*    background: linear-gradient(to bottom right, #1a1a1a, #141e30); /* Gradient background from navy blue to darker navy blue */
+/*     background-color: #ff8474; /* Lighter coral on hover */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #444, #222);
+}
+
+
+
+#home {
+    padding-left: 20px; /* space between logo and text */
+}
+
+
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1.5px; /* alignment was slightly off, should line up text with bottom of logo*/
+}
+
+.links li {
+    display: inline-block; /* keep text horizontal */
+    margin-left: 20px; /* space between text */
+}
+
+.links li:first-child {
+    margin-left: 0;
+}
+
+.links li a {
+    text-decoration: none; /* remove links */
+    color: #fff;
+}
+
+/* yellow button for "list your businesses" */
+.list {
+    background-color: #fcef00;
+    padding: 7px;
+    border-radius: 5px;
+    color: #2f2f2f !important;
+}
+
+/* mobile devices */
+@media screen and (max-width: 768px) {
+    nav {
+display: flex;
+flex-direction: row;
+    }
+
+#left {
+    display: flex;
+    flex-direction: row;
+}
+}
+/*End of navbar, start of main section*/
+
+
+/* House area */
+
+.slogan_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+}
+
+/* Slogan area */
+
+.stacked_slogan_container{
+    padding-top: 65px;
+    text-align:center;
+    display: inline-block;
+    width: 45%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    
+}
+#top_slogan_container{
+    border: 2px solid black;
+    padding-top: 1%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#bottom_slogan_container{
+    border: 2px solid black;
+    padding-top: 1%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#top_slogan{
+    color: #FCEF00;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 0; /* Position the text at the bottom of the container */
+    left: 0; /* Optionally, adjust the left position */
+    right: 0; /* Optionally, adjust the right position */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+
+}
+
+#bottom_slogan{
+    color: #FCEF00;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 0; /* Position the text at the bottom of the container */
+    left: 0; /* Optionally, adjust the left position */
+    right: 0; /* Optionally, adjust the right position */
+    margin: 5px; /* Reset margins */
+    padding: 0; /* Reset padding */
+}
+
+/* search */
+/* Basic CSS for styling the search bar */
+.search-container {
+    margin-top: 10px;
+    margin-left: 12.5%;
+    text-align: left;
+}
+
+.search-input {
+    padding: 10px;
+    width: 24%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: width 0.3s ease; 
+    position: absolute;
+}
+
+.search-input:hover + .search-button{
+    background-color: #FCEF00;
+}
+
+.search-button {
+    position: relative;
+    margin-top: 0;
+    margin-left: 68%;
+    padding: 10px 20px;
+    background-color: #a4a4a489;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+
+
+/* House image */
+.main_section{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 2px solid black;
+}
+
+.house_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+
+}
+#house{
+    margin-top: 50px;
+    padding: 5%;
+    margin-left: 250px;
+    border: 2px solid black;
+    width: 375px;
+    height: 375px;
+}
+
+#services{
+    margin-top: 12px;
+    padding: 5%;
+    border: 2px solid purple;
+    width: 350px;
+    height: 350px;
+    margin-right: 275px;
+
+}
+
+#service_title{
+    border: 2px solid white;
+    color: #FCEF00;
+    font-size: 25px;
+}
+
+#services_container{
+    margin-top: 20px;
+    height: 100px;
+    width: 600px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: left; /* Adjust as needed */
+    align-items: left; /* Adjust as needed */
+    flex-wrap: wrap;
+
+}
+
+.service_text_container{
+    width: 80px;
+    height: 120px;
+    border: 2px dashed teal;
+    margin-right: 7px;
+}
+
+.service_img{
+    height: 70px;
+    width: 70px;
+    border: 2px solid blue;
+    margin-right: 10px;
+}
+
+
+.img_text{
+    border: 2px solid orange;
+    font-size: 14px;
+    color: #FCEF00;
+}
+
+#info_container{
+    border: 2px solid yellow;
+    height: 250px;
+    width: 420px;
+
+}

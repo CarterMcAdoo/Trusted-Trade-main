@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* NavBar */
+header {
+    padding: 15px;
+    background: linear-gradient(to bottom right, #222222, #333333);
+    color: #fff;
+    height: auto;
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+    padding-left: 0px;
+    z-index: 100;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: flex-end; 
+    padding: 1px 100px; 
+}
+/* text/logo on the left side */
+.left-links {
+    display: flex; 
+    align-items: flex-end; 
+}
+/* text on the right side */
+.right-links {
+    display: flex; 
+    align-items: flex-end; 
+}
+
+#home {
+    padding-left: 20px; /* space between logo and text */
+}
+
+
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1.5px; /* alignment was slightly off, should line up text with bottom of logo*/
+}
+
+.links li {
+    display: inline-block; /* keep text horizontal */
+    margin-left: 20px; /* space between text */
+}
+
+.links li:first-child {
+    margin-left: 0;
+}
+
+.links li a {
+    text-decoration: none; /* remove links */
+    color: #fff;
+}
+
+/* yellow button for "list your businesses" */
+.list {
+    background-color: #fcef00;
+    padding: 7px;
+    border-radius: 5px;
+    color: #2f2f2f !important;
+}
+/* dropdown */
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+/* Line styling for three line icon */
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 2.5%;
+	transform: translateY(0%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fcef00;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+/* Media Queries*/
+@media screen and (max-width: 1070px) {
+	
+	nav .logo-container {
+		float: none;
+		width: auto;
+		justify-content: center;
+		width: 200px;
+		display: flex;
+		height: auto;
+		margin-left: 0%;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 101;
+		left: 0;
+		right: 0;
+		top: 65px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+    
+
+    
+}
+
+/*End of navbar, start of main section*/
+

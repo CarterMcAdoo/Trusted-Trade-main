@@ -1,0 +1,22 @@
+To open an html file right click on it 
+and copy then paste the path in your browser
+
+If you want to add images and stuff for 
+our trustedtrade website then make sure
+to add the file within the trustedtradecode folder
+
+Many elements need div containers for positioning
+
+/* This is a css comment */
+<!-- This is an html comment -->
+
+Sometimes it's better to just make a 
+background image inside of a div
+instead of an img element.
+
+Adding borders just for spacing helps,
+remove when done.
+
+px is actually underratted. vw messes shite up
+
+Using block containers inside of flex for positioning helps.

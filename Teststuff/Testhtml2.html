@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Logo and Nav Bar</title>
+    <style>
+        /* Add your CSS styles here */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo-container {
+            margin-right: 0;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 50px;
+            margin-left: 0;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

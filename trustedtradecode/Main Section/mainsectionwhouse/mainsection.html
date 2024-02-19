@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+    <link rel="stylesheet" href="mainsectioncss.css">
+    <script src="../NavBar/TT_navbar.js" defer></script>>
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    
+    <header>
+        <nav>
+          
+            <div class="left-links">
+                <div class="logo-container">
+                    <img src="../NavBar/images/logo.png" alt="" class="logo"/>
+                </div>
+                <div id="left-links">
+                <ul class="links">
+                    <li><a id="home" href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Get Help</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-links">
+                <ul class="links">
+                    <li><a class="signup" href="#">Sign Up</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a class="list" href="#">List Your Business</a></li>
+                </ul>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="icon-burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </label>
+
+          
+        </nav>
+    </header>
+
+    <!-- Main Section 1 -->
+    <div class="slogan_container">
+        <div class = "stacked_slogan_container">
+            <div id = "top_slogan_container">
+                <h1 id = "top_slogan">Your Trusted Partner</h1>
+            </div>
+            <div id = "bottom_slogan_container">
+                <h1 id = "bottom_slogan">for Knoxville Homecare.</h1>
+            </div>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Enter your search term">
+            <button class="search-button" onclick="search()">Search</button>
+        </div>
+        </div>
+    </div>
+    <div class = "main_section">
+        <div class = "house_container">
+            <img src="images/house.png" alt="House" id = "house">
+        </div>
+        <div class = "house_container">
+            <div id = "services">
+                <h1 id = "service_title">Services</h1>
+                <div id = "services_container">
+                    <div class="service_text_container">
+                        <img src = "images/house.png" alt = "Service" class = "service_img">
+                            <span class = "img_text">Landscaping</span>
+                    </div>
+                    <div class="service_text_container">
+                        <img src = "images/house.png" alt = "Service" class = "service_img">
+                            <span class = "img_text">Landscaping</span>
+                    </div>
+                    <div class="service_text_container">
+                        <img src = "images/house.png" alt = "Service" class = "service_img">
+                            <span class = "img_text">Landscaping</span>
+                    </div>
+                    <div class="service_text_container">
+                        <img src = "images/house.png" alt = "Service" class = "service_img">
+                            <span class = "img_text">Landscaping</span>
+                    </div>
+                    <div class="service_text_container">
+                        <img src = "images/house.png" alt = "Service" class = "service_img">
+                            <span class = "img_text">Landscaping</span>
+                    </div>
+                </div>
+                <div id = "info_container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
